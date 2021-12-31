@@ -1,10 +1,13 @@
-import logo from './logo.svg'
-import './App.css'
-
+import { Routes, Route } from 'react-router-dom'
+import Homepage from './pages/Homepage'
+import NewPage from './pages/NewPage'
 function App() {
   return (
     <div className="App">
-      <h3> Welcome to Unknown project</h3>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="about" element={<NewPage />} />
+      </Routes>
     </div>
   )
 }
