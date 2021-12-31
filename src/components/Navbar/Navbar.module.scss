@@ -1,0 +1,33 @@
+.navbar {
+  padding: 20px 50px;
+  display: flex;
+  background-color: #ecf2f4;
+  justify-content: space-between;
+  .search {
+    // display: flex;
+    position: relative;
+
+    input {
+      border-radius: 25px;
+      padding: 5px 5px 5px 15px;
+      outline: none;
+      border: none;
+      &::placeholder {
+      }
+    }
+    img {
+      position: absolute;
+      right: 8px;
+      width: 18px;
+      top: 4px;
+    }
+  }
+  .actions {
+    display: flex;
+    background-color: white;
+    grid-gap: 20px;
+    img {
+      width: 25px;
+    }
+  }
+}
